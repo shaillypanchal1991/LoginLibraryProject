@@ -9,7 +9,7 @@ public class ModelConfiguration implements Parcelable
    private int userNameWidth=0;
    private int passwordHeight=0;
    private int passwordWidth=0;
-   private int loginButtonHeigh=0;
+   private int loginButtonHeight =0;
    private int loginButtonWidth=0;
    private int userNameStockWidth=0;
    private int passwordStockWidth=0;
@@ -31,7 +31,7 @@ public class ModelConfiguration implements Parcelable
        userNameWidth = in.readInt();
        passwordHeight = in.readInt();
        passwordWidth = in.readInt();
-       loginButtonHeigh = in.readInt();
+       loginButtonHeight = in.readInt();
        loginButtonWidth = in.readInt();
        userNameStockWidth = in.readInt();
        passwordStockWidth = in.readInt();
@@ -161,12 +161,12 @@ public class ModelConfiguration implements Parcelable
        this.passwordWidth = passwordWidth;
    }
 
-   public int getLoginButtonHeigh() {
-       return loginButtonHeigh;
+   public int getLoginButtonHeight() {
+       return loginButtonHeight;
    }
 
-   public void setLoginButtonHeigh(int loginButtonHeigh) {
-       this.loginButtonHeigh = loginButtonHeigh;
+   public void setLoginButtonHeight(int loginButtonHeight) {
+       this.loginButtonHeight = loginButtonHeight;
    }
 
    public int getLoginButtonWidth() {
@@ -188,7 +188,7 @@ public class ModelConfiguration implements Parcelable
        parcel.writeInt(userNameWidth);
        parcel.writeInt(passwordHeight);
        parcel.writeInt(passwordWidth);
-       parcel.writeInt(loginButtonHeigh);
+       parcel.writeInt(loginButtonHeight);
        parcel.writeInt(loginButtonWidth);
        parcel.writeInt(userNameStockWidth);
        parcel.writeInt(passwordStockWidth);
